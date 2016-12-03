@@ -1,0 +1,661 @@
+body {
+      line-height: unset !important;
+     }
+
+  /* NAVBAR */
+  nav.toolbar {
+      background: none !important;
+      border: none !important;
+  }
+  .toolbar-nav {
+      padding: 0 0.1em !important;
+  }
+
+  /* buttons */
+  nav.toolbar li.toolbar-button a,
+  nav.toolbar li.toolbar-button-dropdown,
+  nav.toolbar li.toolbar-button-dropdown a,
+  nav.toolbar ul.toolbar-options a,
+  nav.toolbar .toolbar-button-dropdown.highlight,
+  nav.toolbar .toolbar-button-dropdown.highlight a,
+  .toolbar-nav .toolbar-button-dropdown.highlight:hover {
+      background: none !important;
+      border: none !important;
+  }
+  .toolbar-nav .toolbar-button-dropdown > a:nth-of-type(2) {
+      border: none !important;
+  }
+  .toolbar-nav .toolbar-button-dropdown.highlight>a:nth-of-type(2) {
+      border: none !important;
+  }
+  nav.toolbar .toolbar-subscribe {
+      display: none !important;
+  }
+
+  /* Bailey */
+  .npc_bailey_head {
+  top: -27px;
+  }
+
+  /* HEADER */
+	.site-header, .header-wrap, .sticky-wrapper {
+    	height: 175px !important;
+    }
+  .header-wrap {
+      padding: 0 0 0 !important;
+       border: none !important;
+      overflow: hidden !important; /* hides scrollbars */
+  }
+    .main-list {
+      margin-top: 0em; /*might depend on header scroll settings */
+    }
+  .herobox {
+      background: none !important;
+      margin-top: 25px !important;
+  }
+	.herobox .avatar-level {
+        border: 0;
+        outline: 0;
+        background: none !important;
+    }
+
+  /* bars */
+
+  .hero-stats {
+      background: none !important;
+      border: none !important;
+  }
+
+    .hero-stats .meter-label {
+      margin-right: 0;
+      border-top-left-radius: 1.3em !important;
+      border-bottom-left-radius: 1.3em !important;
+      outline: 0;
+      height: 2.31em;
+      padding: 0.5em 0 0.5em 0.4em;
+    }
+
+    .hero-stats .meter-label[tooltip='Health'], .hero-stats .meter-label[tooltip='Boss Health'] {
+      background: #6F1818 !important;
+      border-color: #6F1818 !important;
+      outline-color: #6F1818 !important; /*check if important with world bosses, otherwise can delete*/
+    }
+    .hero-stats .meter-label[tooltip='Experience'] {
+      background: #8A6700 !important;
+      border-color: #8A6700 !important;
+      outline-color: #8A6700 !important;
+    }
+    .hero-stats .meter-label[tooltip='Mana'] {
+      background: #0F3577 !important;
+      border-color: #0F3577 !important;
+      outline-color: #0F3577 !important;
+    }
+
+    .hero-stats .meter {
+      outline: 0;
+      height: 1.85em;
+      border-top-right-radius: 1.3em !important;
+      border-bottom-right-radius: 1.3em !important;
+    }
+
+    .hero-stats .meter-text.value {
+      right: 0.75em;
+    }
+
+  .meter {
+      font-weight: 600 !important;
+      border: none !important;
+      margin: 0 0 4px !important;
+  }
+
+/* TAGS */
+
+    .filters .filters-controls, .filters .filters-edit, .filters .filters-tags, .filters .filters-search {
+      margin-right: 1px;
+      margin-bottom: 0;
+    }
+
+	.filters {
+        margin: 0px 1px 0px 1px !important;
+        padding: 0px 0px 0px 0px !important;
+        }
+
+	.input-group-sm>.form-control, .input-group-sm>.input-group-addon {
+    	height: 25px;
+  	  	padding: 3px 5px 0 5px !important;
+	}
+
+  /* task columns */
+
+  .tasks-lists .row .col-md-3 {
+      padding: 0 4px !important;
+  }
+  .task-column {
+      padding: 0 !important;
+      border: none !important;
+  }
+
+.task-column .task-column_title { /* only affects narrow view */
+    font-size: 0;
+}
+
+@media all and (min-width: 992px) {
+   .col-md-3:not([class="rewards-module"]) { /* make task columns wider */
+      width: 27% !important;
+  }
+  .col-md-3.rewards-module { /* make rewards column skinnier */
+      width: 19% !important;
+  }
+}
+
+  h2.task-column_title {
+    font-size: 0px !important;
+  }
+
+	.task-column .option-box { /* help and graph glyphs*/
+  	  font-size: 9px;
+  	  margin: 4px 70px 0px 0px !important;
+       position: relative;
+     z-index: 2 !important;
+	}
+
+	.task-add {
+ 	   position: relative;
+		z-index: 1 !important;
+	}
+
+  .task-add input, .task-add textarea, .task-add button {
+		margin: -16px 0 0 0;
+	}
+
+    .help-block.btn-link {/* move 'add multiple' button into input bar */
+        margin: -14px 74px 1px 0px !important;
+        text-decoration: underline;
+    	font-weight: 400;
+        font-size: 10px;
+    }
+
+  /*task filter */
+
+	.task-filter {
+        padding: 0 0 0 0 !important;
+        margin: 2px 0 0 0 !important;
+        font-size: 12px;
+	}
+
+  /* Task body */
+
+  habitrpg-tasks {
+      font-size: 12px !important;
+  }
+
+    .task-meta-controls > span > a:not(.badge) {display: none !important;}
+    .task:not(.reward):not(.todo):hover .task-meta-controls > span > a:not(.badge) {
+      display: inline !important;
+    }
+
+    .task.todo:hover .task-meta-controls > span > a:not(.badge):not([tooltip="Progress"]), .task.reward:hover .task-meta-controls > span > a:not(.badge):not([tooltip="Progress"]) {
+      display: inline !important;
+    }
+
+  .task {
+     border-top: none !important;
+     margin: 0 0 0 0 !important;
+     min-height: unset !important;
+  }
+
+  .task-meta-controls, .reward-meta-controls {
+      margin: 5px 2px 0 0 !important;
+  }
+
+  .dailys .task-text,   .todos .task-text, .habits .task-text {
+      padding: 3px 0 3px 25px !important;
+  }
+
+  /* Daily & To-do checkboxes */
+
+    .task-meta-controls a.badge {
+     display: none;
+  }
+
+ 	.daily .task-checker label,   /*shrinks darkened left margin (both displayed and clickable) */
+	.todo .task-checker label,
+	.action-yesno label:before,
+	.habits .task-actions,
+	.task-checker label {
+	 	width: 19px !important;
+ 	 }
+
+  .action-yesno label:after { /* Daily Main Checkbox */
+      margin: 4px 4px 4px 4px  !important;
+  }
+
+  .action-yesno label:hover:after, /* checkmark */
+  .action-yesno label:focus:after,
+  .action-yesno input[type="checkbox"]:checked + label:after {
+      margin: -9px 0 0 -9px !important;
+  }
+
+  /* Checklists */
+  .task-text .checkbox {
+      margin: -4px 0 0 0 !important;
+      min-height: unset !important;
+  }
+
+  /* Editing tasks */
+ .task-checklist-edit>.checklist-form li {
+    margin-bottom: 0.5em
+ }
+ [class$="-options"] .option-group {
+    padding: 0 0 0;
+    margin-bottom: 0;
+    margin-top: 0;
+ }
+ .task-options .repeat-days {
+    padding-bottom: 0;
+ }
+ .checkbox+.checkbox, .radio+.radio {
+    margin-top: -17px;
+ }
+
+/* REWARDS */
+
+  .rewards {
+      margin-bottom: 0px !important;
+      padding-bottom: 5px !important;
+  }
+
+.reward, .items .ng-scope {
+     min-height: 30px !important;
+  }
+
+  .btn-buy .shop_gold {   /* hide gold coin */
+      display: none !important;
+  }
+
+  .btn-buy { /* left bar */
+      width: 25px;
+      min-height: unset !important;
+      padding: 1px 1px 1px 1px !important;
+      text-align: center !important;
+      vertical-align: middle !important;
+  }
+
+    .rewards .btn-buy span { /* custom and equipment and transform cost*/
+      left: 0px;
+    }
+
+	.rewards .task-text {
+        padding: 2px 0 0 2px !important;
+        margin: 0 0 0 27px !important;
+  }
+
+	.rewards .reward-img {
+ 	   margin: -5px 0px -5px 24px !important;
+	}
+
+	.ng-scope .reward-cost { /*spells cost*/
+	    margin: 0 0 0 0 !important;
+	    padding: 0 0 0 0 !important;
+	}
+
+	.shop_spell {
+ 	   margin: 0 0 0 -4px !important;}
+
+/* MISC */
+
+  footer {
+      display: none !important;
+  }
+    .task-column:not(.rewards) .items.rewards { /* hide the always empty items rewards ul of all columns except for rewards */
+      display: none !important;
+    }
+
+	/* resize the graphs and adjust their position so they are displayed properly */
+    .task > div:first-of-type > div:first-of-type > div:first-of-type, .task > div:first-of-type > div:first-of-type > div:first-of-type svg {
+      height: 280px !important;
+      width: 320px !important;
+    }
+    .task > div:first-of-type > div:first-of-type > div:first-of-type > div:first-of-type {
+      top: -15px !important;
+      left: 10px !important;
+    }
+
+  /* POP-UP NOTIFICATIONS */
+
+  .ui-pnotify-shadow {
+      box-shadow: none !important;
+  }
+  .ui-pnotify-container {
+      padding: 0.25em 0.5em !important;
+      outline: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+
+  /* NON-TASK-LIST TWEAKS */
+
+  .tavern-chat li .scrollable-message,  .party-chat li .scrollable-message {  /* removes chat scrollbars */
+      max-height: unset !important;
+      overflow-y: unset !important;  }
+
+    .options-menu {    /* Inventory */
+ 	   padding: 12px 12px 0 !important;	}
+	.pets-menu>div.ng-scope  {
+             width: unset;
+             max-width: 4.4em; }
+	.inventory_special_shinySeed, .inventory_special_spookySparkles, .inventory_special_snowball,
+	.inventory_special_seafoam, .inventory_present, .inventory_special_trinket, .inventory_quest_scroll {
+            background-color: transparent !important }
+	.pet-button {   background-color: transparent    }
+	.customize-option.Pet-Mammoth-Base, .customize-option.Pet-MantisShrimp-Base, .customize-option.Mount_Head_Mammoth-Base, .customize-option.Mount_Head_MantisShrimp-Base {   background-color: transparent    }
+
+/* 	MAKE STUFF DARKER SO TASKS STAND OUT */
+
+body {
+      background-color:  #333333 !important;
+      color: grey; /* Was #009999 !important. Default text color shows up in Equipment and other places. */
+     }
+.filters .filters-controls li:first-of-type {
+  	background: black;
+    	color: white;
+	}
+.task-column {
+      background: none !important;
+  	}
+.task-add input, .task-add textarea, .task-add {
+ 	color: lightgrey !important;
+	}
+.help-block.btn-link {/* 'add multiple' button */
+             color: #333333;
+   	}
+.task-add input:focus .help-block.btn-link, .task-add:hover .help-block.btn-link {
+      color: lightgrey;
+    }
+input[type="text"]:not(#foo) {   /* New Task boxes */
+      background-color: #333333  !important;
+      border-right: none !important;
+      color: lightgrey !important;
+  }
+.task-add button:not(#foo) {
+      background-color: black !important;
+		border-left: none !important;
+  }
+.task-filter li>a:not(#foo),
+  .task-filter li>button:not(#foo),
+  .task-filter li>input:not(#foo) {
+      color: #a6a6a6 !important;
+      background-color: #444 !important;
+  }
+.task-filter li.active a:not(#foo) {
+      color: white !important;
+      background: black !important;
+      box-shadow: none !important;
+  }
+.task {
+	border-color: #333333 !important;
+  }
+.task {
+      color: rgba(0, 0, 0, 0.75);
+  }
+.customize-option { /*inventory backgrounds*/
+  	  background-color: darkgrey;
+	}
+ .chat-buttons>input, .chat-buttons>button {   /*fixes Send and Fetch buttons*/
+      background-color: grey
+  }
+a span.glyphicon { /*fixes glyphicons */
+    Color: blueviolet /* #009999 */
+}
+.chat-message .chat-plus-one { /*fixes +1 */
+        opacity: 0.5;
+        background-color: #333333 ;
+}
+.scrollable-message.transparent { /* fixes sent PMs */
+    color:#009999;
+    opacity: 1;
+}
+.options-menu {
+    background-color: #333333 !important;
+}
+.options-menu li.active a, .options-menu li.active button {
+    background-color: grey !important;
+    color: black !important;
+    border-color: #009999 !important;
+}
+.pet-button {
+    border-left-style:solid ;
+    border-left-width:4px;
+    border-right-style:solid;
+    border-right-width:4px;
+    border-top-style:solid ;
+    border-top-width:4px;
+    border-bottom-style:solid ;
+    border-bottom-width:1px;
+    border-color: #333333 !important;
+
+}
+.popover, .well {
+    background-color: #C0C0C0 !important;
+    color: black !important;
+}
+
+  /* ANIMATION */
+
+  .current-pet { /* this animation is from Merfy */
+      animation-duration: 60s !important;
+      -webkit-animation-name: boingg !important;
+      animation-name: boingg !important;
+      animation-delay: 45s !important;
+      animation-iteration-count: infinite;
+  }
+  @keyframes boingg {
+      0%, 2.1% {
+          transform: translateY(0) scaleX(1) scaleY(1);
+      }
+      1% {
+          transform: translateY(8px) scaleY(0.9) scaleX(1.05);
+      }
+      1.5% {
+          transform: translateY(-24px) scaleY(1.06) scaleX(1);
+      }
+      1.8% {
+          transform: translateY(8px) scaleY(0.95) scaleX(1.2);
+      }
+  }
+  .herobox span[class^="Mount_"],
+  .herobox span[class^="current-mount Mount_Head_"] { /* this animation is based on one from Merfy's style */
+      animation-duration: 80s !important;
+      -webkit-animation-name: rawrr !important;
+      animation-name: rawrr !important;
+      animation-delay: 0s !important;
+      animation-iteration-count: infinite;
+  }
+  @keyframes rawrr {
+      0%, 7.5% {
+          transform: rotate(0);
+      }
+      2.5% {
+          transform: rotate(-.15deg) translateX(-2px) translateY(3px);
+      }
+      3.5% {
+          transform: rotate(.1deg) translateX(-1px) translateY(4px);
+      }
+  }
+  .herobox .character-sprites span[class^="weapon_"] {
+      animation-duration: 100s;
+      animation-name: becareful;
+      animation-iteration-count: infinite;
+      animation-delay: 57s !important;
+  }
+  @keyframes becareful { /* this animation is from Merfy */
+      1%, 1.3% {
+          transform: rotate(30deg);
+          transform-origin: 47px 68px;
+      }
+      1.5%,
+      1.6% {
+          transform: rotate(-100deg) translateY(-4px);
+          transform-origin: 47px 68px;
+      }
+      3% {
+          transform: rotate(0);
+          transform-origin: 47px 68px;
+      }
+  }
+  .herobox .character-sprites span[class^="head_"] {
+      animation-duration: 30s;
+      animation-name: slide;
+      animation-iteration-count: infinite;
+      animation-delay: 1s !important;
+  }
+  @keyframes slide {
+      0% {
+          transform: rotate(0) translateY(0px)
+      }
+      7% {
+          transform: rotate(4deg)
+      }
+      19% {
+          transform: rotate(-4deg)
+      }
+      28% {
+          transform: rorate(4deg) translateY(1px)
+      }
+      33% {
+          transform: rotate(0deg) translateY(0px)
+      }
+      56% {
+          transform: translateY(1px)
+      }
+      66% {
+          transform: translateY(0px)
+      }
+      89% {
+          transform: translateY(1px)
+      }
+    }
+     .herobox .character-sprites span[class^="shield_"] {
+      animation-duration: 60s;
+      animation-name: fidget;
+      animation-iteration-count: infinite;
+      animation-delay: 5s !important;
+  }
+  @keyframes fidget {
+      0%, 45% {
+          transform: rotate(0) rotateX(0) rotateY(0)
+      }
+      5% {
+          transform: rotate(3deg) rotateX(3deg) rotateY(3deg)
+      }
+      15% {
+          transform: rotate(6deg) rotateX(-6deg) rotateY(-6deg)
+      }
+      20% {
+          transform: translateY(4px) rotateX(4deg) rotateY(4deg)
+      }
+      25% {
+          transform: translateY(3px) rotateX(-3deg) rotateY(-3deg)
+      }
+      35% {
+          transform: translateY(2px) rotateX(2deg) rotateY(2deg)
+      }
+  }
+
+/* CONTROLLING COLORS TO GO WITH THE BACKGROUNDS */
+
+/* color of toolbar text and buttons */
+  nav.toolbar li.toolbar-button a,
+  nav.toolbar li.toolbar-button-dropdown,
+  nav.toolbar li.toolbar-button-dropdown a,
+  nav.toolbar ul.toolbar-options a,
+  nav.toolbar .toolbar-button-dropdown.highlight,
+  nav.toolbar .toolbar-button-dropdown.highlight a,
+  .toolbar-nav .toolbar-button-dropdown.highlight:hover,
+  .toolbar-currency.gold,
+  .toolbar-currency.silver,
+  .gem-wallet,
+  .toolbar .glyphicon {
+      color: white /* Options include: black, white, grey, rgba(0,0,0,0.4) */ !important;
+  }
+
+ /* color of notifications background (above text color applies to notifications text so this may need to be adjusted depending on what color you used) */
+.toolbar-notifs div, .toolbar-audio div, .toolbar-settings div {
+    background-color: black !important; /* Other options include: #333333 */
+}
+
+  /* color of upper left buttons on mouse hover */
+  .toolbar-nav .toolbar-button > a:hover,
+  .toolbar-nav .toolbar-button button:hover,
+  .toolbar-nav .toolbar-button-dropdown > a:hover,
+  .toolbar-nav .toolbar-button-dropdown button:hover,
+  .toolbar-nav .toolbar-button-dropdown.highlight > a:hover,
+  .toolbar-nav .toolbar-button-dropdown.highlight button:hover {
+      background-color: black /* Other options include: black, tan, rgba(0,0,0,0.1) */ !important;
+  }
+
+  /* stat bar colors: this makes them more muted */
+/*  .avatar-level,
+  .hero-stats,
+  .bar {
+      -webkit-filter: invert(80%);
+      -moz-filter: invert(80%);
+      -ms-filter: invert(80%);
+      -o-filter: invert(80%);
+      filter: invert(80%);
+  } */
+
+  /* color of text in stat bars */
+  /* .meter {
+     color: rgba(0,0,0,0.5) !important;
+} */
+
+/*BACKGROUNDS*/
+  .header-wrap {
+      background-repeat: repeat;
+      box-shadow: 5px 0px 15px grey;
+      background-image: url(https://2.bp.blogspot.com/-eXMjAsV17yk/Vzq37mMU-2I/AAAAAAAAABQ/n3uDxsZVEfE-wS2Z1KbkLbSpa10L4o0bACLcB/s1600/Opening%2BArea%2BActive%2BView.png) !important;
+      background-size: cover /* COVER VS. CONTAIN: WHICH ONE YOU NEED DEPENDS ON YOUR SCREEN SIZE AND WHICH BACKGROUND YOU PICKED. TRY IT BOTH WAYS BEFORE YOU GIVE UP ON A BACKGROUND. MANY BACKGROUNDS LOOK COMPLETELY DIFFERENT WITH ONE SETTING COMPARED TO THE OTHER ONE. CONTAIN MEANS TILE AND COVER MEANS STRETCH. */ !important;
+  }
+
+/*
+January:
+https://s-media-cache-ak0.pinimg.com/originals/ce/ef/bd/ceefbda99817085c3309bce31ec9e619.gif
+
+February:
+http://4.bp.blogspot.com/-QQvWKoBIf_s/UNqLNFUDTKI/AAAAAAAALIM/B_GcX8jhq0g/s1600/pink+valentine.gif
+
+Spring:
+https://wallpaperscraft.com/image/flowers_lawn_grass_summer_nature_23921_3840x1200.jpg
+http://www.freeirishphotos.com/images/large/flowers/crocus/flowering_crocuses_in_lawn.jpg
+http://bluegrassirrigation.com/wp-content/uploads/2013/03/green-nature-grass-fields-lawn-HD-Wallpapers.jpg
+
+Summer:
+http://i.imgur.com/O1APgco.jpg (from Merfy's theme)
+http://i.imgur.com/MYRPFNG.jpg (mountain sunset)
+
+Summer Splash Event:
+http://i.imgur.com/5YYOQtP.jpg (pixelated waves)
+http://www.54moto.com/uploads/allimg/140401/4-140401102118.jpg (bright underwater)
+http://g4.img-dpreview.com/F55AE79FCEEF423BA29C57EE1784F946.jpg (underwater with fish and coral)
+http://blog.360cities.net/wp-content/uploads/2011/08/523.jpg (floor of shallow sea)
+http://image.shutterstock.com/z/stock-vector-underwater-landscape-with-various-water-plants-and-swimming-tropical-fishes-all-objects-are-95900884.jpg (undersea cartoon)
+https://d13yacurqjgara.cloudfront.net/users/6063/screenshots/2344387/feshloop.gif (giant fish animation)
+https://67.media.tumblr.com/57cf45610c33796a7e1dffb8dd2d43ca/tumblr_ntz781rRZF1rzdirco1_500.gif (animation from Song of the Sea film)
+http://pre15.deviantart.net/c65d/th/pre/i/2014/285/4/1/little_mermaid___secrets_of_the_sea_by_leosari-d82m63b.jpg (dolphins and fish)
+
+October:
+https://33.media.tumblr.com/tumblr_m3mt82g1KE1rv68y7o1_500.gif
+
+November:
+https://media.giphy.com/media/ToMjGpKJdfdgLZoAPrG/giphy.gif
+https://freeauctiondesigns.com/ebay/templates/animated_fall_leafs/welcome.gif
+http://dl.glitter-graphics.com/pub/3514/3514281o5bdow70vk.gif
+https://media.giphy.com/media/fm2W3aKxl9y0g/giphy.gif
+http://media.giphy.com/media/ToMjGpQe9iCuexMtEg8/giphy.gif
+http://media.giphy.com/media/UxTZDNv0Zej4s/giphy.gif
+
+December/Christmas:
+http://33.media.tumblr.com/6b95f27f4d1add64ec634e2ff127a0dc/tumblr_mfg92cu01Y1rc0yuao1_500.gif
+http://i201.photobucket.com/albums/aa113/Lee1959/Christmas/RedTop.gif
+http://www.cbc.ca/punchline/content/images/punchroll/candle-christmas.gif
+http://vignette1.wikia.nocookie.net/the-house-of-anubis/images/4/45/Animated-transparent-christmas-l-1.gif/revision/latest?cb=20131101181950
+*/
